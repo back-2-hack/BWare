@@ -36,7 +36,7 @@ else:
     '''+'\033[0m')
     print('\033[93m'+'''
                                        Tool :- BWare
-                               Tool type :- Ransomeware Generator
+                               Tool type :- Ransomeware Maker
                                      Created by :- B2H
                         B2H's github :- https://github.com/back-2-hack
     '''+'\033[0m')
