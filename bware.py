@@ -1,6 +1,4 @@
 import os
-import glob
-from cryptography.fernet import Fernet
 import sys
 
 code = ''
