@@ -9,5 +9,5 @@ A ransomware maker
  
  ~/BWare ❯❯❯ sudo pip3 install -r requirements.txt
  
- ~/BWare ❯❯❯ python3 bware.py
+ ~/BWare ❯❯❯ ./bware
  ```
