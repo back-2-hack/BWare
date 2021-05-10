@@ -7,7 +7,7 @@ A ransomware maker
  
  ~ ❯❯❯ cd BWare
  
- ~/BWare ❯❯❯ sudo -H pip3 install -r requirements.txt
+ ~/BWare ❯❯❯ sudo pip3 install -r requirements.txt
  
  ~/BWare ❯❯❯ python3 bware.py
  ```
