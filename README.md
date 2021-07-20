@@ -1,5 +1,5 @@
 # BWare
-A ransomware maker
+A ransomware generator
 
 **Commands :-**
 ```
