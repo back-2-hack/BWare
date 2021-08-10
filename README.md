@@ -5,6 +5,8 @@ Video tutorial {
 https://www.youtube.com/watch?v=wYWnZ8ySrtg
 }
 
+**For Education purpose only**
+
 **Commands :-**
 ```
  ~ ❯❯❯ git clone https://github.com/back-2-hack/BWare.git
