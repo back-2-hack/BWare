@@ -5,7 +5,7 @@ Video tutorial {
 https://www.youtube.com/watch?v=wYWnZ8ySrtg
 }
 
-**For Education purpose only**
+**Only For Education purpose**
 
 **Commands :-**
 ```
