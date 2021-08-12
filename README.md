@@ -1,10 +1,6 @@
 # BWare
 A ransomware generator
 
-Video tutorial {
-https://www.youtube.com/watch?v=wYWnZ8ySrtg
-}
-
 **Only For Education purpose**
 
 **Commands :-**
@@ -30,3 +26,8 @@ https://www.youtube.com/watch?v=wYWnZ8ySrtg
  ~/BWare ❯❯❯ python3 bware.py
  
  ```
+
+
+Video tutorial {
+https://www.youtube.com/watch?v=wYWnZ8ySrtg
+}
