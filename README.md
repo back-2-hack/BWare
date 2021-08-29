@@ -3,6 +3,7 @@ A ransomware generator
 
 **Only For Education purpose**
 
+
 **Features :-**
 ```
 + Decryption key will be diffrrent for every file 
