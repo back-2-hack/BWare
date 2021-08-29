@@ -3,7 +3,7 @@ A ransomware generator
 
 **Only For Education purpose**
 
-**Features :- **
+**Features :-**
 ```
 + Decryption key will be diffrrent for every file 
                   {So that if some1 found x1 file's decryption key they can't decrypt other files with same key and finding out even one file's decryption key takes a lot of time :)}
