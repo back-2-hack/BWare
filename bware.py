@@ -9,6 +9,7 @@ all_s_dir = []
 all_s_file = []
 allsd = {}
 
+
 def make_ware(tdir,tfname):
     with open('./base/dflt.py') as f:
         code = f.read()
