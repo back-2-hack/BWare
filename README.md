@@ -10,6 +10,7 @@ A ransomware generator
 ```
 
 
+
 **Commands :-**
 ```
  ~ ❯❯❯ git clone https://github.com/back-2-hack/BWare.git
